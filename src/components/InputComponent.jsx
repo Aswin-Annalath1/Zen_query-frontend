@@ -17,7 +17,7 @@ const InputComponent = ({editTaskId,setEditTaskId,taskList,setTaskList,text,setT
       //Add todo case..
       if (!!text && !!text1 && !!text2 && !!text3 && editTaskId < 1) {
         //This is Adding to BE
-        fetch("http://localhost:5000/ticket/"+userid,{
+        fetch("https://zenquery-backend.onrender.com/ticket/"+userid,{
           method: "POST",
           headers: {"Content-Type": "application/json"},
           body: JSON.stringify({ query_type: text,name: text1,discription: text2,phone_no: text3})  //Whatever i write currently in FE
@@ -51,7 +51,7 @@ const InputComponent = ({editTaskId,setEditTaskId,taskList,setTaskList,text,setT
       let index = taskList.findIndex((obj) => obj.id === editTaskId);  //editTaskId we got from app.jsx
       if (index > -1) {
       //This is Edited add to BE
-      fetch("http://localhost:5000/ticket/"+userid+"/"+taskList[index]._id,{
+      fetch("https://zenquery-backend.onrender.com/ticket/"+userid+"/"+taskList[index]._id,{
         //PUT help again edit by admin if required..
         method: "PUT",
         headers: {"Content-Type": "application/json"},

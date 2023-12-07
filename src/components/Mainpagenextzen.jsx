@@ -29,7 +29,7 @@ function Mainpagenextzen() {
   
 //Called for Api call
     useEffect(() => {
-      fetch("http://localhost:5000/ticket/"+userid+"/"+id) //In FE we have to write localhost:
+      fetch("https://zenquery-backend.onrender.com/ticket/"+userid+"/"+id) //In FE we have to write localhost:
       .then((res) => {return res.json()})
       .then((data) => {console.log(data)
   
@@ -93,7 +93,7 @@ function Mainpagenextzen() {
   const addComment = () => {
   if (!!text ) {
     //This is Adding to BE
-    fetch("http://localhost:5000/ticket/"+userid+"/"+id,{
+    fetch("https://zenquery-backend.onrender.com/ticket/"+userid+"/"+id,{
       method: "POST",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({ content: text})  //Whatever i write currently in FE
@@ -110,7 +110,7 @@ function Mainpagenextzen() {
 //Close the Ticket....
 
   const editStatus = () => {
-  fetch("http://localhost:5000/ticket/status/"+userid+"/"+id,{
+  fetch("https://zenquery-backend.onrender.com/ticket/status/"+userid+"/"+id,{
       //PUT help again edit by admin if required..
       method: "PUT",
       headers: {"Content-Type": "application/json"},

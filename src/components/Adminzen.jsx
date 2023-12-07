@@ -12,7 +12,8 @@ const navigate = useNavigate()
   
 //Called for Api call
     useEffect(() => {
-      fetch("http://localhost:5000/admin/ticket") //In FE we have to write localhost:
+      // http://localhost:5000
+      fetch("https://zenquery-backend.onrender.com/admin/ticket") //In FE we have to write localhost:
       .then((res) => {return res.json()})
       .then((data) => {console.log(data)
 
@@ -55,7 +56,7 @@ const navigate = useNavigate()
    let index = taskList.findIndex((obj) => obj.id === i); 
    if (typeof text[index] ==='string' && index > -1 ) {
     //This is Adding to BE
-    fetch("http://localhost:5000/admin/"+taskList[index].userID+"/"+taskList[index]._id,{
+    fetch("https://zenquery-backend.onrender.com/admin/"+taskList[index].userID+"/"+taskList[index]._id,{
       method: "PUT",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({ status: "IN PROGRESS",assignedTo: text[index]})  //Whatever i write currently in FE
@@ -71,7 +72,7 @@ const navigate = useNavigate()
 
   //Here wew are doing logout...
   const handlelogout = async()=>{
-    fetch('http://localhost:5000/users/logout',{
+    fetch('https://zenquery-backend.onrender.com/users/logout',{
       method:'GET',
       headers:{'Content-Type':'application/json'},
     })

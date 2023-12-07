@@ -30,7 +30,7 @@ function Staffnextzen() {
   
 //Called for Api call
     useEffect(() => {
-      fetch("http://localhost:5000/ticket/"+userid+"/"+id) //In FE we have to write localhost:
+      fetch("https://zenquery-backend.onrender.com/ticket/"+userid+"/"+id) //In FE we have to write localhost:
       .then((res) => {return res.json()})
       .then((data) => {console.log(data)
   
@@ -92,7 +92,7 @@ function Staffnextzen() {
   const addComment = () => {
   if (!!text ) {
     //This is Adding to BE
-    fetch("http://localhost:5000/staff/"+userid+"/"+id,{
+    fetch("https://zenquery-backend.onrender.com/staff/"+userid+"/"+id,{
       method: "POST",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({ content: text})  //Whatever i write currently in FE

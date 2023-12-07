@@ -8,7 +8,7 @@ const navigate = useNavigate()
 const handlelogin = async()=>{
 
   // http://localhost:5000
-  fetch('http://localhost:5000/users/login',{
+  fetch('https://zenquery-backend.onrender.com/users/login',{
     method:'POST',
     headers:{'Content-Type':'application/json'},
     body:JSON.stringify({

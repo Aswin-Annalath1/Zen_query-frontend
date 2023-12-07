@@ -23,7 +23,7 @@ const navigate = useNavigate()
   
   //Called for Api call
     useEffect(() => {
-      fetch("http://localhost:5000/ticket/"+userid) //In FE we have to write localhost:
+      fetch("https://zenquery-backend.onrender.com/ticket/"+userid) //In FE we have to write localhost:
       .then((res) => {return res.json()})
       .then((data) => {console.log(data)
   
@@ -51,7 +51,7 @@ const navigate = useNavigate()
     let index = taskList.findIndex((obj) => obj.id === i); //here checking task.id == obj.id
     if (index > -1) {
     //This is removal from BE
-      fetch(`http://localhost:5000/ticket/${userid}/${taskList[index]._id}`, {
+      fetch(`https://zenquery-backend.onrender.com/ticket/${userid}/${taskList[index]._id}`, {
         method: "DELETE",
         headers: {"Content-Type": "application/json"}})
         .then((res) => {return res.json()})  //The rest todo after deletion is got as response
@@ -93,7 +93,7 @@ const navigate = useNavigate()
 
   //Here wew are doing logout...
   const handlelogout = async()=>{
-    fetch('http://localhost:5000/users/logout',{
+    fetch('https://zenquery-backend.onrender.com/users/logout',{
       method:'GET',
       headers:{'Content-Type':'application/json'},
     })

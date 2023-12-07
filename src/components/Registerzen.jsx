@@ -13,7 +13,7 @@ const password = passwordInput.value;
 // Check if the password meets the required condition
 if (/^\d{6}$/.test(password)) {
 // Password is valid //Here datas are posted to the routed Db and created _id and token and that taken...
-  fetch('http://localhost:5000/users/register', {
+  fetch('https://zenquery-backend.onrender.com/users/register', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
