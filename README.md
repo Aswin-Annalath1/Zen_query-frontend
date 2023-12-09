@@ -1,6 +1,6 @@
 
-# Login Details For Admin :Arun-987654
-# Login Details For Staff :Kumar-543210,Sruthi-432109
+# Login Details For Admin :arunanna@gmail.com-987654
+# Login Details For Staff :kumar@gmail.com-543210,sruthi@gmail.com-432109
 
 #FUTURE SCOPE: We can use formik in form validations(while login and during datas filling)
                We can use email sending during status change to alert user...
