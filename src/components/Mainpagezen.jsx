@@ -106,7 +106,7 @@ const navigate = useNavigate()
     <>
 
     <nav className="bg-violet-700 fixed top-0 w-full z-50">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-5">
+      <div className="max-w-screen-xll flex flex-wrap items-center justify-between mx-6 p-5">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
         <svg className="w-10 h-10 text-green-400 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
           <path d="M16 0H4a2 2 0 0 0-2 2v1H1a1 1 0 0 0 0 2h1v2H1a1 1 0 0 0 0 2h1v2H1a1 1 0 0 0 0 2h1v2H1a1 1 0 0 0 0 2h1v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6ZM13.929 17H7.071a.5.5 0 0 1-.5-.5 3.935 3.935 0 1 1 7.858 0 .5.5 0 0 1-.5.5Z"/>
@@ -225,7 +225,7 @@ const navigate = useNavigate()
       </div>
     </div> 
     <footer className="fixed bottom-0 w-full bg-violet-700 rounded-sm shadow m-0 dark:bg-gray-800  border-1  border-violet-700 hover:shadow-lg transition duration-300 ease-in-out">
-      <div className="w-full mx-auto max-w-screen-xl p-1.5 md:flex md:items-center md:justify-between ">
+      <div className="w-full mx-10 max-w-screen-xl p-1.5 md:flex md:items-center md:justify-between ">
         <span className="text-sm text-gray-200 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" className="hover:underline italic ">ASI™</a>. All Rights Reserved.
       </span>
       <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-200 dark:text-gray-400 sm:mt-0">

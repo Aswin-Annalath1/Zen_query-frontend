@@ -78,7 +78,7 @@ const handlelogout = async()=>{
 return (
   <>
     <nav className="bg-violet-700 fixed top-0 w-full z-50">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-5">
+      <div className="max-w-screen-xll flex flex-wrap items-center justify-between mx-6 p-5">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
         <svg className="w-10 h-10 text-green-400 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
           <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 1v3m5-3v3m5-3v3M1 7h18M5 11h10M2 3h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/>
@@ -167,7 +167,7 @@ return (
           </table>
       </div>
       <footer className="fixed bottom-0 w-full bg-violet-700 rounded-sm shadow m-0 dark:bg-gray-800  border-1  border-violet-700 hover:shadow-lg transition duration-300 ease-in-out">
-      <div className="w-full mx-auto max-w-screen-xl p-1.5 md:flex md:items-center md:justify-between ">
+      <div className="w-full mx-10 max-w-screen-xl p-1.5 md:flex md:items-center md:justify-between ">
         <span className="text-sm text-gray-200 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" className="hover:underline italic ">ASI™</a>. All Rights Reserved.
       </span>
       <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-200 dark:text-gray-400 sm:mt-0">
