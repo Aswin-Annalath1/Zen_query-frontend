@@ -1,8 +1,9 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Login Details For Admin :Arun-987654
+# Login Details For Staff :Kumar-543210,Sruthi-432109
 
-Currently, two official plugins are available:
+#FUTURE SCOPE: We can use formik in form validations(while login and during datas filling)
+               We can use email sending during status change to alert user...
+               We can add Forget password to reset password...
+               We can set Dark mode theme...
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
