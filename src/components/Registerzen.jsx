@@ -32,7 +32,7 @@ if (/^\d{6}$/.test(password)) {
   }}
 
   return (
-    <div className="bg-cover bg-center" style={{ backgroundImage: 'url("/images/zenQ.jpg")' }}>
+    <div className="bg-cover bg-center" style={{ backgroundImage: 'url("/images/zenQ.jpg")',backgroundSize: '1920px 960px', backgroundRepeat: 'no-repeat', backgroundPosition: 'center'}}>
       <div className="min-h-screen flex items-center justify-center">
         <div className=" bg-white bg-opacity-10 hover:bg-opacity-70 p-10 pl-20 pr-20 rounded-md shadow-md ">
           <div className="flex mb-3 ">
