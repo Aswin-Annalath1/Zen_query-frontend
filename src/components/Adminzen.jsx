@@ -7,7 +7,6 @@ function Adminzen() {
   
 const [taskList, setTaskList] = useState([]);
 
-//This is to handle logout
 const navigate = useNavigate()
   
 //Called for Api call
@@ -20,7 +19,6 @@ const navigate = useNavigate()
       // Filter out tasks where status is not equal to "open"
       const filteredTasks = data.filter((task) => task.status === "OPEN");
   
-        //This is to make a normal id number to store with task name...
         filteredTasks.map((task) => {
            setTaskList((taskList) => [
             ...taskList,
@@ -45,13 +43,13 @@ const navigate = useNavigate()
   const[text,setText] = useState(Array(taskList.length).fill(''));
   const[show,setShow] = useState('')
   
-  //Changes value in inputfield coresponding to index..
+//Changes value in inputfield coresponding to index..
   const handleTextChange = (index, value) => {
     const newText = [...text]
     newText[index] = value
     setText(newText);
   }
-  //Here we assaign mentor and onClick it will be submitted and ticket removed.. 
+//Here we assaign mentor and onClick it will be submitted and ticket removed.. 
   const addComment = (i) => {
    let index = taskList.findIndex((obj) => obj.id === i); 
    if (typeof text[index] ==='string' && index > -1 ) {
@@ -70,7 +68,7 @@ const navigate = useNavigate()
     return;
   }};
 
-  //Here wew are doing logout...
+//Here wew are doing logout...
   const handlelogout = async()=>{
     fetch('https://zenquery-backend.onrender.com/users/logout',{
       method:'GET',

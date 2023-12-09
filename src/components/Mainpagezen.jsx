@@ -7,7 +7,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 const Mainpagezen = () => {
   
   const [taskList, setTaskList] = useState([]);
-//This is to fetch userid and paste it with urls..
+//This is to fetch userid from urls to use with other fetchings...
     const {userid}=useParams()
 // //This is to handle to go to another mainpage...
 const navigate = useNavigate()
@@ -54,7 +54,7 @@ const navigate = useNavigate()
       fetch(`https://zenquery-backend.onrender.com/ticket/${userid}/${taskList[index]._id}`, {
         method: "DELETE",
         headers: {"Content-Type": "application/json"}})
-        .then((res) => {return res.json()})  //The rest todo after deletion is got as response
+        .then((res) => {return res.json()})  //The rest ticket after deletion is got as response
         .then((data) => {console.log(data)
     //This is removal from FE
            taskList.splice(index, 1);    // 1 represent to delete 1 item after that index.

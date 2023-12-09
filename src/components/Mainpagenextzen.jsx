@@ -7,7 +7,7 @@ function Mainpagenextzen() {
   
   const [taskList, setTaskList] = useState([]);
 
-//This is to fetch userid and paste it with urls..
+//This is to fetch userid and ticket id coming from urls..
     const {userid,id} = useParams()
 
 // Function to generate HTML for each comment
@@ -111,7 +111,7 @@ function Mainpagenextzen() {
 
   const editStatus = () => {
   fetch("https://zenquery-backend.onrender.com/ticket/status/"+userid+"/"+id,{
-      //PUT help again edit by admin if required..
+      //PUT Method help again to edit by admin if required..
       method: "PUT",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({ status: "CLOSED"})  //Whatever i write currently in FE 

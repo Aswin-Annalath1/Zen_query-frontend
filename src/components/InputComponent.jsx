@@ -14,7 +14,7 @@ const InputComponent = ({editTaskId,setEditTaskId,taskList,setTaskList,text,setT
     };
   
     const changeTask = () => {
-      //Add todo case..
+      //Add ticket case..
       if (!!text && !!text1 && !!text2 && !!text3 && editTaskId < 1) {
         //This is Adding to BE
         fetch("https://zenquery-backend.onrender.com/ticket/"+userid,{
@@ -46,7 +46,7 @@ const InputComponent = ({editTaskId,setEditTaskId,taskList,setTaskList,text,setT
         return;
       }
   
-  //Edit a current todo case...
+  //Edit a current ticket case...
   
       let index = taskList.findIndex((obj) => obj.id === editTaskId);  //editTaskId we got from app.jsx
       if (index > -1) {
