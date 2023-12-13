@@ -81,7 +81,7 @@ function Mainpagenextzen() {
       })
       .catch((err) => {console.log(err)})
   
-    }, []); 
+    }, [taskList]); 
 
 //Add a Comment...
   const[text,setText] = useState("")
@@ -101,7 +101,7 @@ function Mainpagenextzen() {
     .then((res) => {return res.json()})
     .then((data) => {console.log(data)
     setText("");
-    window.location.reload();
+    
     })
     .catch((err) => {console.log(err)})
     return;
@@ -118,7 +118,7 @@ function Mainpagenextzen() {
       })
       .then((res) => {return res.json()})
       .then((data) => {console.log(data)
-        window.location.reload();
+      
       })
       .catch((err) => {console.log(err)})
 }
