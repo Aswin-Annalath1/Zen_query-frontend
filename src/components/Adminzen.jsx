@@ -37,7 +37,7 @@ const navigate = useNavigate()
       })
       .catch((err) => {console.log(err)})
   
-    }, [taskList]); 
+    }, []); 
 
 //Add a Mentor...
   const[text,setText] = useState(Array(taskList.length).fill(''));
@@ -62,6 +62,7 @@ const navigate = useNavigate()
     .then((res) => {return res.json()})
     .then((data) => {console.log(data)
     setShow(index)
+    window.location.reload();
     })
     .catch((err) => {console.log(err)})
     return;
