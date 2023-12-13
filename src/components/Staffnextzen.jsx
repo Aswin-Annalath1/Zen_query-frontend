@@ -80,7 +80,7 @@ function Staffnextzen() {
       })
       .catch((err) => {console.log(err)})
   
-    }, []); 
+    }, [taskList]); 
 
 //Add a Comment...
   const[text,setText] = useState('')
@@ -100,7 +100,6 @@ function Staffnextzen() {
     .then((res) => {return res.json()})
     .then((data) => {console.log(data)
     setText("");
-    window.location.reload();
     })
     .catch((err) => {console.log(err)})
     return;
