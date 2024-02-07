@@ -1,10 +1,15 @@
 import React from 'react'
 import { useEffect, useState } from "react"
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 
 
 function Mainpagenextzen() {
   
+  const navigate = useNavigate();
+  const handleChange = async () => {
+    navigate(-1);
+  };
+
   const [taskList, setTaskList] = useState([]);
 
 //This is to fetch userid and ticket id coming from urls..
@@ -151,6 +156,11 @@ return (
     {taskList.length > 0 && (
     <div className="flex h-screen mt-20">
       <div className="flex-grow w-3/5 overflow-auto bg-gray-200 p-4">
+        <button onClick={handleChange} class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+          <span class="relative px-4 py-2 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+           Back
+          </span>
+        </button>
         <div className="mb-16 border border-gray-300 hover:shadow-lg  rounded-lg px-8 py-8 transition duration-300 ease-in-out m-16 border p-4 group bg-gray-300">
           <div className="m-2">
             <h3 className=" mb-10 text-center text-3xl font-bold dark:text-white">Query Details</h3>
