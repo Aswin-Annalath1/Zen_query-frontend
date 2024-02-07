@@ -86,7 +86,11 @@ function Mainpagenextzen() {
       })
       .catch((err) => {console.log(err)})
   
+<<<<<<< HEAD
     },[taskList]); 
+=======
+    }, [taskList]); 
+>>>>>>> 962badabd6673926b00f332854fd657a50d8a049
 
 //Add a Comment...
   const[text,setText] = useState("")
@@ -106,6 +110,10 @@ function Mainpagenextzen() {
     .then((res) => {return res.json()})
     .then((data) => {console.log(data)
     setText("");
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 962badabd6673926b00f332854fd657a50d8a049
     })
     .catch((err) => {console.log(err)})
     return;
@@ -122,6 +130,10 @@ function Mainpagenextzen() {
       })
       .then((res) => {return res.json()})
       .then((data) => {console.log(data)
+<<<<<<< HEAD
+=======
+      
+>>>>>>> 962badabd6673926b00f332854fd657a50d8a049
       })
       .catch((err) => {console.log(err)})
 }
